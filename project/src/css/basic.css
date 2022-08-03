@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+:root {
+  --mainColor: #2c8ae4;
+}
+.container {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.mainColor {
+  color: var(--mainColor);
+}

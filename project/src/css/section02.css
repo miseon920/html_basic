@@ -1,0 +1,166 @@
+.t_b {
+  color: #2c8ae4;
+}
+.Business .container {
+  display: flex;
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Business {
+  padding: 100px 0;
+  letter-spacing: -0.02em;
+  font-size: 15px;
+}
+.Business h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.Business h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 15px auto;
+  background: #ddd;
+}
+.Business > p {
+  font-weight: 300;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.Business img {
+  max-width: 100%;
+}
+.Business .container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.Business figure {
+  /* flex: 1; */
+  position: relative;
+  overflow: hidden;
+}
+.Business .cover {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: flex-start;
+  padding: 40px 10px;
+  transition: left 0.5s;
+}
+.Business .cover > * {
+  color: #fff;
+}
+.Business figure:hover .cover {
+  left: 0;
+}
+/* .Business figure:hover .inbox {
+        transition: 0.5s 0.3s;
+      }
+      .Business figure:hover .inbox {
+        transform: translateX(100px);
+        background: #000;
+      } */
+.Business figure h3 {
+  align-self: stretch; /*자기자신만 바꾸는 방법!*/
+  font-size: 21px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.Business figure {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+.Business .cover a {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 15px;
+  margin-top: auto;
+}
+.container.bot {
+  display: block;
+  padding-top: 100px;
+}
+.Business .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Business .inner {
+  margin: 0 -15px;
+}
+.Business .inner > div {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+.Business .inner .tit .tit_inner {
+  position: relative;
+  padding-left: 15px;
+}
+.Business .inner .tit .tit_inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #2c8ae4;
+}
+.Business .inner .tit strong {
+  display: block;
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.Business .list .dotList li {
+  padding-bottom: 10px;
+}
+.Business .list .dotList li:last-child {
+  padding-bottom: 0;
+}
+.Business .list .dotList li::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #2c8ae4;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .Business {
+    padding: 50px 0;
+  }
+  .Business .container {
+    flex-direction: column;
+  }
+  .Business .inner {
+    padding-top: 50px;
+  }
+  .Business .inner > div {
+    float: none;
+    width: 100%;
+  }
+  .Business .inner > div.tit {
+    padding-bottom: 30px;
+  }
+  .container.bot {
+    padding-top: 0;
+  }
+}

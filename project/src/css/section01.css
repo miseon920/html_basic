@@ -1,0 +1,123 @@
+.about {
+  padding: 100px 0;
+  letter-spacing: -0.02em;
+  font-size: 15px;
+}
+.about h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 15px auto;
+  background: #ddd;
+}
+.t_b {
+  color: #2c8ae4;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.about > p {
+  font-weight: 300;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.about .container {
+  justify-content: space-between;
+}
+.about .des {
+  width: calc(100% - 400px);
+}
+.about .des .tit {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 50px;
+  line-height: 1.2;
+}
+.about .des p {
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.about .des p:last-of-type {
+  padding-bottom: 0;
+}
+.about figure {
+  width: 400px;
+}
+.about figure img {
+  max-width: 100%;
+}
+.about h3 {
+  position: relative;
+  font-size: 23px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+.about h3::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 23px;
+  background: #2c8ae4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.inner {
+  display: block;
+  padding-top: 100px;
+}
+.table_response {
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  width: 1170px;
+  /* width: 100%; */
+  border-collapse: collapse;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid #ddd;
+}
+table th {
+  border-bottom: 1px solid #000;
+  width: 150px;
+}
+table th,
+table td {
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+  .about .des,
+  .about figure {
+    width: 100%;
+    text-align: center;
+  }
+  .about .des p:not(.tit) br {
+    display: none;
+  }
+  .inner {
+    padding-top: 50px;
+  }
+}
