@@ -1,6 +1,6 @@
 const Section03 = () => {
   return (
-    <section Name="Business02 basicSection">
+    <section className="Business02 basicSection">
       <h2>
         <span className="mainColor">OUR</span> Business
       </h2>

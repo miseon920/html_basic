@@ -1,13 +1,83 @@
-@charset "utf-8";
+@charset "uft-8";
 
 :root {
-  --mainColor: #2c8ae4;
+  --mc: #2c8ae4; /*메인컬러*/
+  --sc: red; /*서브컬러*/
+  --gc: #ddd; /*그레이컬러*/
+  --bg: #f7f7f7; /*백그라운드컬러*/
+  --dc: #444;
+}
+.basicSection {
+  padding: 100px 0;
+  letter-spacing: -0.02em;
+  font-size: 15px;
+}
+.basicSection h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.basicSection h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 15px auto;
+  background: #ddd;
+}
+.basicSection > p {
+  font-weight: 300;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.mainColor {
+  /* color: #2c8ae4; */
+  color: var(--mc);
+}
+.inner::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .container {
   display: flex;
-  max-width: 1170px;
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
   margin: 0 auto;
 }
-.mainColor {
-  color: var(--mainColor);
+.list .dotList li {
+  padding-bottom: 10px;
+}
+.list .dotList li:last-child {
+  padding-bottom: 0;
+}
+.list .dotList li::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--mc);
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.inner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.after::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container.bot {
+  display: block;
+  padding-top: 50px;
+}
+@media (max-width: 767px) {
+  .basicSection {
+    padding: 50px 0;
+  }
 }

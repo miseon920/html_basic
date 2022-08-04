@@ -1,3 +1,17 @@
+@charset "utf-8";
+
+.Nav {
+  margin: 100px auto 0;
+  line-height: 50px;
+  border-top: 1px solid var(--bg);
+  border-bottom: 1px solid var(--bg);
+}
+.Nav ul {
+  justify-content: center;
+}
+.Nav ul li a.active {
+  color: var(--mc);
+}
 .Business02 .container {
   gap: 50px;
 }

@@ -31,4 +31,5 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   line-height: 1;
   color: #333;
+  outline: 0;
 }

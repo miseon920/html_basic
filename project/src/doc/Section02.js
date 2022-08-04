@@ -2,7 +2,7 @@ const Section02 = () => {
   return (
     <div className="Business">
       <h2>
-        <span className="t_b">our</span> Business
+        <span className="mainColor">our</span> Business
       </h2>
       <p>새로운 미래를 열어가는 써니대표</p>
       <div className="container">
