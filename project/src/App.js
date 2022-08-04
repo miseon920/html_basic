@@ -1,22 +1,16 @@
 import Section01 from "./doc/Section01";
 import Section02 from "./doc/Section02";
+import Section03 from "./doc/Section03";
+import Section02 from "./doc/Section03";
 
 const App = () => {
   return (
     // <i className="xi-bars mainColor"></i>
     <>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Section01</a>
-          </li>
-          <li>
-            <a href="">Section02</a>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
       <Section01 />
       <Section02 />
+      <Section03 />
     </>
   );
 };
