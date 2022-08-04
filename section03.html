@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basic 03 - 상세페이지</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+  </head>
+  <!--js : 객체 속성 - property-->
+  <!--html: 태그 속성 attribute-->
+  <style>
+    .Business02 .container {
+      gap: 50px;
+    }
+    .Business02 .left img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .Business02 .right {
+      display: flex;
+      flex-direction: column;
+      border-top: 2px solid var(--dc);
+      padding-top: 40px;
+    }
+    .Business02 .right h3 {
+      font-size: 31px;
+      font-weight: 700;
+      padding-bottom: 15px;
+    }
+    .Business02 .right p {
+      padding-bottom: 30px;
+    }
+    .Business02 .right .bottom {
+      margin-top: auto;
+      background: var(--bg);
+      border-top: 1px solid var(--dc);
+      padding: 20px 20px 40px 20px;
+      line-height: 1.2;
+    }
+    .Business02 .bot h3 {
+      font-size: 27px;
+      font-weight: 500;
+      padding-bottom: 30px;
+    }
+    .Business02 .bot h3::before {
+      content: "/";
+      display: inline-block;
+      color: var(--mc);
+      font-size: 18px;
+      font-weight: 900;
+      margin-right: 10px;
+      transform: translateY(-10px) rotate(20deg);
+    }
+    .Business02 .bot ul {
+      padding: 20px 0;
+      border-top: 1px solid var(--dc);
+      border-bottom: 1px solid var(--dc);
+    }
+    .Business02 .bot ul li {
+      float: left;
+      width: 50%;
+      padding-bottom: 10px;
+    }
+    /*https://wellcode.tistory.com/5 뒤에서 부터 선택하는 선택자*/
+    .Business02 .bot ul li:nth-last-child(2),
+    .Business02 .bot ul li:last-child {
+      padding-bottom: 0;
+    }
+    .Business02 .bot ul li::before {
+      content: attr(data-num);
+      display: inline-block;
+      padding: 5px;
+      background: var(--dc);
+      border-radius: 13px;
+      color: #fff;
+      margin-right: 10px;
+      font-style: italic;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="section01.html">section01</a></li>
+        <li><a href="section02.html">section02</a></li>
+        <li class="on"><a href="section03.html">section03</a></li>
+      </ul>
+    </nav>
+    <section class="Business02 basicSection">
+      <h2><span class="mainColor">OUR</span> Business</h2>
+      <p>오늘도 뛰고 있는 써니대표</p>
+      <div class="container">
+        <div class="left">
+          <figure>
+            <img src="./img/insta01.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="right list">
+          <h3>심플하지만 다갖춘 써니대표</h3>
+          <p>써니대표에 대해서 궁금하신걸 물어보세요</p>
+          <ul class="dotList">
+            <li>odio praesentium? At!</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>adipisicing elit. Ipsam debitis cumque nostrum</li>
+            <li>quod obcaecati voluptate ut soluta</li>
+          </ul>
+          <div class="bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            <br />
+            similique nulla nam iste aut explicabo totam ullam perferendis
+            necessitatibus ad!
+          </div>
+        </div>
+      </div>
+      <div class="container bot">
+        <h3>심플하지만 다갖춘 써니대표</h3>
+        <ul class="after">
+          <!--data는 본인이 만든것-->
+          <li data-num="01">odio praesentium? At!</li>
+          <li data-num="02">Lorem ipsum dolor sit amet consectetur</li>
+          <li data-num="03">adipisicing elit. Ipsam debitis cumque nostrum</li>
+          <li data-num="04">quod obcaecati voluptate ut soluta</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

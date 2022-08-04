@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f6f7;
+}
+
+header {
+  position: relative;
+  padding: 60px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+h1 img {
+  width: 240px;
+}
+
+header select {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label p {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 3px 0 20px 30px;
+  vertical-align: middle;
+  background: url("../img/pc_chcek_off_s_20.png") left top no-repeat;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label .large {
+  padding: 3px 0 22px 32px;
+  background: url("../img/pc_check_off_24.png") left top no-repeat;
+}
+input[type="checkbox"]:checked + label p {
+  background: url("../img/pc_chcek_on_s_20.png") left top no-repeat;
+}
+input[type="checkbox"]:checked + label .large {
+  background: url("../img/pc_check_on_l_24.png") left top no-repeat;
+}
+
+main {
+  margin-bottom: 30px;
+}
+main .container .cont {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #333;
+  cursor: pointer;
+}
+
+main .all label {
+  text-decoration: underline; /* line-through; */
+  text-underline-position: under; /* 글과 언더라인 띄우기 */
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+main .all h2 {
+  margin-bottom: 20px;
+}
+
+.must {
+  font-size: 14px;
+  color: #21b121;
+  font-weight: 300;
+}
+.choose {
+  font-size: 14px;
+  color: #b1b1b1;
+  font-weight: 300;
+}
+.box {
+  border: 1px solid #333;
+  background: #fff;
+  font-size: 12px;
+  width: 460px;
+  height: 80px;
+  overflow-y: scroll;
+  padding: 10px;
+  font-weight: 300;
+  color: #525151;
+  border: 1px solid #ddd;
+}
+textarea {
+  resize: none;
+  font-size: 11px;
+  color: #6d6d6d;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.box .acc {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.agree {
+  margin-bottom: 20px;
+}
+
+.last {
+  font-size: 12px;
+}
+
+.btn_two {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #fff;
+  gap: 20px;
+}
+
+.btn_two > div {
+  flex: 1;
+}
+.btn_two a {
+  display: block;
+  font-size: 19px;
+  padding: 15px 0;
+  text-align: center;
+}
+.cancel {
+  background: #8e8e8e;
+}
+
+.confirmation {
+  background: #36b036;
+}
+
+.tw {
+  font-size: 12px;
+  text-align: center;
+}
+
+.tw .ul {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+footer {
+  text-align: center;
+}
+
+footer .container {
+  width: 460px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+footer .f_menu {
+  position: relative;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+footer .f_menu li:hover a {
+  color: green;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.f_top .f_menu > li ~ li::before {
+  content: "";
+  display: inline-block;
+  inset: 50% auto auto -25%;
+  width: 1px;
+  height: 11px;
+  background: #dadada;
+  margin: 0 10px;
+  vertical-align: 2px;
+}
+
+footer .f_menu li:nth-child(2) {
+  font-weight: 700;
+}
+.f_bottom {
+  width: 460px;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.f_bottom img {
+  width: 70px;
+  height: 10px;
+  padding: 0 10px;
+}
+
+.f_bottom a {
+  font-weight: 700;
+}
