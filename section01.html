@@ -6,80 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>basic 01 - 상세페이지</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
     <style>
-      .about {
-        padding: 100px 0;
-        letter-spacing: -0.02em;
-        font-size: 15px;
-      }
-      .about h2 {
-        font-size: 40px;
-        font-weight: 500;
-        text-align: center;
-      }
-      .about h2::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 2px;
-        margin: 15px auto;
-        background: #ddd;
-      }
-      .t_b {
-        color: #2c8ae4;
-      }
       .container {
-        max-width: 1200px;
-        padding: 0 15px;
-        width: 100%;
-        margin: 0 auto;
         display: flex;
         gap: 30px;
       }
-      .about > p {
+      .basicSection > p {
         font-weight: 300;
         padding-bottom: 50px;
         text-align: center;
       }
-      .about .container {
+      .basicSection .container {
         justify-content: space-between;
       }
-      .about .des {
+      .basicSection .des {
         width: calc(100% - 400px);
       }
-      .about .des .tit {
+      .basicSection .des .tit {
         font-size: 25px;
         font-weight: 500;
         padding-bottom: 50px;
         line-height: 1.2;
       }
-      .about .des p {
+      .basicSection .des p {
         font-size: 20px;
         font-weight: 300;
         padding-bottom: 30px;
       }
-      .about .des p:last-of-type {
+      .basicSection .des p:last-of-type {
         padding-bottom: 0;
       }
-      .about figure {
+      .basicSection figure {
         width: 400px;
       }
-      .about figure img {
+      .basicSection figure img {
         max-width: 100%;
       }
-      .about h3 {
+      .basicSection h3 {
         position: relative;
         font-size: 23px;
         font-weight: 500;
         padding-left: 30px;
         padding-bottom: 15px;
       }
-      .about h3::before {
+      .basicSection h3::before {
         content: "";
         display: block;
         width: 3px;
         height: 23px;
-        background: #2c8ae4;
+        background: var(--mc);
         position: absolute;
         left: 0;
         top: 0;
@@ -112,18 +88,15 @@
         padding: 10px;
       }
       @media (max-width: 767px) {
-        .about {
-          padding: 50px 0;
-        }
-        .about .container {
+        .basicSection .container {
           flex-direction: column;
         }
-        .about .des,
-        .about figure {
+        .basicSection .des,
+        .basicSection figure {
           width: 100%;
           text-align: center;
         }
-        .about .des p:not(.tit) br {
+        .basicSection .des p:not(.tit) br {
           display: none;
         }
         .inner {
@@ -133,14 +106,14 @@
     </style>
   </head>
   <body>
-    <section class="about">
-      <h2><span class="t_b">CEO's</span> GREETINGS</h2>
+    <section class="basicSection">
+      <h2><span class="mainColor">CEO's</span> GREETINGS</h2>
       <p>새로운 미래를 열어가는 써니대표</p>
       <div class="container">
         <div class="des">
           <p class="tit">
-            웹서비스의 <span class="t_b">새로운 미래를</span> <br />
-            <span class="t_b">써니대표</span>가 이끌어갑니다
+            웹서비스의 <span class="mainColor">새로운 미래를</span> <br />
+            <span class="mainColor">써니대표</span>가 이끌어갑니다
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
