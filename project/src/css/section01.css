@@ -75,9 +75,8 @@
   left: 0;
   top: 0;
 }
-.inner {
+.about .inner {
   display: block;
-  padding-top: 100px;
 }
 .table_response {
   width: 100%;
@@ -116,8 +115,5 @@ table td {
   }
   .about .des p:not(.tit) br {
     display: none;
-  }
-  .inner {
-    padding-top: 50px;
   }
 }

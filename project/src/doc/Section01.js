@@ -33,49 +33,51 @@ const Section01 = () => {
           <img src="./img/press0401.jpg" alt="" />
         </figure>
       </div>
-      <div className="container inner">
-        <h3>주요현황</h3>
-        <div className="table_response">
-          <table>
-            <tbody>
-              <tr>
-                <th scope="row">설립일</th>
-                <td>2022년 8월 2일</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-              </tr>
-              <tr>
-                <th scope="row">본사주소</th>
-                <td>부산시 수영구 광안동</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-              </tr>
-              <tr>
-                <th scope="row">임직원 수</th>
-                <td>204명</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-              </tr>
-              <tr>
-                <th scope="row">법인 및 지사</th>
-                <td>84개</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-                <td>반응형만들어보자</td>
-              </tr>
-            </tbody>
-          </table>
+      <div className="container bot">
+        <div className="inner">
+          <h3>주요현황</h3>
+          <div className="table_response">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">설립일</th>
+                  <td>2022년 8월 2일</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                </tr>
+                <tr>
+                  <th scope="row">본사주소</th>
+                  <td>부산시 수영구 광안동</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                </tr>
+                <tr>
+                  <th scope="row">임직원 수</th>
+                  <td>204명</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                </tr>
+                <tr>
+                  <th scope="row">법인 및 지사</th>
+                  <td>84개</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                  <td>반응형만들어보자</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>

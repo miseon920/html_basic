@@ -67,6 +67,9 @@
   width: 100%;
   margin: 0 auto;
 }
+.bot .inner {
+  padding-top: 100px;
+}
 .after::after {
   content: "";
   display: block;
@@ -79,5 +82,8 @@
 @media (max-width: 767px) {
   .basicSection {
     padding: 50px 0;
+  }
+  .bot .inner {
+    padding-top: 50px;
   }
 }
