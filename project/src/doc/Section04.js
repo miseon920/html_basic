@@ -2,13 +2,13 @@ const Section04 = () => {
   return (
     <section className="About02 basicSection">
       <h2>
-        <span>CEO's</span>GREETINGS
+        <span className="mainColor">CEO's</span> GREETINGS
       </h2>
       <p>항상 새로운 우투드영투드우</p>
       <div className="inner">
         <div className="top">
           <figure>
-            <img src="./img/main01.jpg" alt="" />
+            <img src="./img/insta01.jpg" alt="" />
           </figure>
         </div>
         <div className="left">
@@ -54,9 +54,9 @@ const Section04 = () => {
         </div>
       </div>
 
-      <div className="inner pd15">
+      <div className="container bot pd15">
         <h3>주요현황</h3>
-        <div className="responsive-table">
+        <div className="table_response">
           <table className="table">
             <caption>* description</caption>
             <colgroup>

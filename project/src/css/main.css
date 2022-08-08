@@ -80,3 +80,31 @@
   margin-right: 10px;
   font-style: italic;
 }
+.About02 .top {
+  float: left;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+.About02 .left {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.About02 .left::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 150px;
+  background: var(--mc);
+}
+
+.About02 .right {
+  float: left;
+  width: 50%;
+}
+.About02 .top img {
+  width: 100%;
+}
